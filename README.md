@@ -38,7 +38,9 @@ Cada cartão abre o WhatsApp com a mensagem já escrita para a categoria
 (ex.: *"Olá, Rocha Store! Vim pelo link da bio e quero ver as opções de caixas de som."*).
 Assim a loja já sabe o que a pessoa quer desde a primeira mensagem.
 
-## Antes de publicar: 3 ajustes
+**No ar:** https://rocha-store-027.pages.dev
+
+## Ajustes pendentes
 
 Tudo fica em **`assets/js/config.js`**:
 
@@ -59,17 +61,30 @@ Tudo fica em **`assets/js/config.js`**:
   Se quiser usar o arquivo original, troque o `<svg class="emblema__svg">` no
   `index.html` por um `<img>`.
 
-## Publicar (GitHub Pages, grátis)
+## Publicação (Cloudflare Pages)
 
-1. No GitHub, abra **Settings → Pages**.
-2. Em *Source*, escolha **Deploy from a branch**, depois a branch e a pasta `/ (root)`.
-3. O link sai no formato `https://<usuario>.github.io/biolink-rochastore/`. Coloque esse
-   link no campo "site" do perfil do Instagram.
-4. Para a prévia aparecer bonita quando o link for enviado no WhatsApp, troque no
-   `index.html` o valor de `og:image` pelo endereço completo, por exemplo
-   `https://<usuario>.github.io/biolink-rochastore/assets/img/og.jpg`.
+O site está no projeto **`rocha-store-027`** do Cloudflare Pages, no endereço
+`https://rocha-store-027.pages.dev`, que não leva o nome de ninguém. Coloque esse
+link no campo "site" do perfil do Instagram.
 
-Também funciona em Netlify, Vercel ou Cloudflare Pages: basta arrastar a pasta.
+Para publicar uma versão nova, suba **só** o `index.html` e a pasta `assets/`, sem
+README, `CLAUDE.md` ou `og/`:
+
+```bash
+mkdir -p /tmp/dist && cp -r index.html assets /tmp/dist/
+```
+
+```bash
+npx wrangler pages deploy /tmp/dist --project-name rocha-store-027 --branch main
+```
+
+Atenção: use `wrangler pages deploy` para o projeto que já existe. Não crie um projeto
+novo com `wrangler pages project create` nem use `wrangler deploy`. As versões novas do
+wrangler criam um *Worker*, e o endereço de Worker desta conta fica em
+`*.<usuario>.workers.dev`, ou seja, com o nome do dono no link.
+
+O `og:image` no `index.html` já aponta para o endereço completo. Se o domínio mudar,
+atualize `og:url`, `og:image` e `canonical`.
 
 ## Estrutura
 

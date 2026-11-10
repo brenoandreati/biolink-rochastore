@@ -24,6 +24,15 @@
 
   const canal = temWhats ? "WhatsApp" : "direct";
 
+  // Sem WhatsApp, o ícone do botão principal vira o aviãozinho do direct.
+  if (!temWhats) {
+    document.querySelectorAll("[data-icone-contato]").forEach((svg) => {
+      svg.innerHTML =
+        '<path d="M21.5 2.5 10.6 13.4M21.5 2.5l-6.9 19-4-8.1-8.1-4 19-6.9Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>';
+      svg.style.color = "var(--rs)";
+    });
+  }
+
   document.querySelectorAll("[data-contato]").forEach((a) => {
     a.href = linkContato(mensagens[a.dataset.mensagem] || mensagens.geral);
   });
