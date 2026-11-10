@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rocha Store · Tecnologia que combina com você</title>
+  <meta name="description" content="Caixas de som, fones Bluetooth, smartwatches, power banks, acessórios, perfumes e linha gamer. Escolha a categoria e peça direto pelo WhatsApp. Produtos sob encomenda.">
+  <meta name="theme-color" content="#0B2F7E">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rocha Store ⚡">
+  <meta property="og:description" content="Tecnologia que combina com você. Eletrônicos, acessórios e produtos sob encomenda.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&family=Geologica:wght@300..700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Desenhos compartilhados: gradiente da bolha de blister e recorte em forma de rocha -->
+  <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="bolha" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset=".55" stop-color="#EEF3FB"/>
+        <stop offset="1" stop-color="#D3DEF1"/>
+      </linearGradient>
+      <linearGradient id="bolha-vazia" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FFFFFF" stop-opacity=".16"/>
+        <stop offset="1" stop-color="#FFFFFF" stop-opacity=".04"/>
+      </linearGradient>
+      <linearGradient id="brilho" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+        <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".9"/>
+        <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="pedra" x1=".2" y1="0" x2=".8" y2="1">
+        <stop offset="0" stop-color="#AEB3BC"/>
+        <stop offset="1" stop-color="#7A808B"/>
+      </linearGradient>
+      <clipPath id="corte-bolha">
+        <path d="M9.3 86.1L7.2 72.9Q6 66 8.7 59.5L12.9 49.4Q16 42 21.9 36.6L32.1 27.4Q38 22 45.2 18.4L55.7 13.1Q62 10 69 10.7L75 11.3Q82 12 87.7 16.1L93.5 20.3Q100 25 104 31.9L108 39.1Q112 46 113.3 53.9L114.8 63.1Q116 70 114.6 76.9L112.8 86.1Q112 90 108 90L14 90Q10 90 9.3 86.1Z"/>
+      </clipPath>
+      <clipPath id="corte-bolha-larga">
+        <path d="M9.4 100L7.1 83.9Q6 76 9.6 68.8L16 56Q20 48 27.1 42.4L40.9 31.6Q48 26 56.2 22.4L72.7 15.2Q80 12 88 12L100 12Q108 12 114.9 16L124.2 21.5Q132 26 137.1 33.4L144.9 44.6Q150 52 151.9 60.8L154.3 72.2Q156 80 154.7 87.9L152.7 100.1Q152 104 148 104L14 104Q10 104 9.4 100Z"/>
+      </clipPath>
+      <clipPath id="corte-celular">
+        <rect x="0" y="0" width="200" height="148"/>
+      </clipPath>
+    </defs>
+  </svg>
+
+  <a class="pular" href="#parede">Pular para as categorias</a>
+
+  <main class="pagina">
+    <header class="topo">
+      <div class="emblema" aria-hidden="true">
+        <svg viewBox="0 0 200 160" class="emblema__svg">
+          <path class="emblema__rocha" fill="url(#pedra)" d="M11.1 143.1L7.8 125.8Q6 116 9.5 106.6L13.8 95.2Q18 84 26.5 75.5L35.5 66.5Q44 58 54.1 51.5L67.9 42.5Q78 36 89.3 32L102.6 27.3Q112 24 121.7 26.2L128.3 27.8Q138 30 145.9 36.1L154.5 42.7Q164 50 170.3 60.2L179.7 75.8Q186 86 188.9 97.6L191.6 108.3Q194 118 192 127.8L189 143.1Q188 148 183 148L17 148Q12 148 11.1 143.1Z"/>
+          <g clip-path="url(#corte-celular)">
+            <rect x="57" y="54" width="86" height="120" rx="15" fill="#0E1116"/>
+            <rect x="62" y="59" width="76" height="110" rx="11" fill="#FFFFFF"/>
+            <rect x="84" y="59" width="32" height="8" rx="4" fill="#0E1116"/>
+          </g>
+          <text x="100" y="124" text-anchor="middle" class="emblema__rs">RS</text>
+        </svg>
+      </div>
+
+      <h1 class="marca">Rocha Store<svg class="marca__raio" viewBox="0 0 24 32" aria-hidden="true"><path d="M14.5 1 3 18h7.5L8 31 21 12h-7.8z"/></svg></h1>
+      <p class="slogan" data-texto="slogan">Tecnologia que combina com você.</p>
+      <p class="apresentacao">Eletrônicos, acessórios e muito mais. O que não tiver aqui, a gente encomenda pra você.</p>
+
+      <div class="acoes">
+        <a class="botao botao--principal" data-contato data-mensagem="geral" href="#" target="_blank" rel="noopener">
+          <svg class="botao__icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.8l5.1-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.8 3 .6a2.5 2.5 0 0 0 1.7-1.2 2 2 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3Z"/></svg>
+          <span class="botao__texto">
+            <span class="botao__rotulo" data-rotulo-contato>Chamar no WhatsApp</span>
+            <span class="botao__apoio">Dúvidas, preços e pedidos</span>
+          </span>
+          <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="botao botao--secundario" data-instagram href="https://www.instagram.com/rochastore027/" target="_blank" rel="noopener">
+          <svg class="botao__icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".9" class="cheio"/></svg>
+          <span class="botao__rotulo">Seguir <span data-arroba>@rochastore027</span></span>
+        </a>
+      </div>
+    </header>
+
+    <section class="parede" id="parede" aria-labelledby="t-parede">
+      <div class="secao-cabeca">
+        <h2 id="t-parede">Escolha uma categoria</h2>
+        <p data-ajuda-categorias>Cada cartão abre o WhatsApp com a mensagem pronta.</p>
+      </div>
+      <ul class="ganchos" data-ganchos>
+        <!-- preenchido por main.js a partir de config.js -->
+      </ul>
+      <noscript>
+        <p class="sem-js">Para ver as categorias, ative o JavaScript ou chame a gente no Instagram: <a href="https://www.instagram.com/rochastore027/">@rochastore027</a>.</p>
+      </noscript>
+    </section>
+
+    <section class="sorteio" data-sorteio hidden aria-labelledby="t-sorteio">
+      <a class="cartela" data-sorteio-link href="#" target="_blank" rel="noopener">
+        <span class="furo furo--esq" aria-hidden="true"><span class="pino"></span></span>
+        <span class="furo furo--dir" aria-hidden="true"><span class="pino"></span></span>
+        <span class="cartela__texto">
+          <span class="selo" data-sorteio-selo>Sorteio no Instagram</span>
+          <span class="cartela__titulo" id="t-sorteio" data-sorteio-titulo>Concorra a um carregador portátil</span>
+          <span class="cartela__corpo" data-sorteio-texto></span>
+          <span class="cartela__acao"><span data-sorteio-botao>Ver post do sorteio</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
+        </span>
+        <span class="cartela__bolha" aria-hidden="true">
+          <svg viewBox="0 0 160 112">
+            <path class="bolha__aba" d="M9.4 100L7.1 83.9Q6 76 9.6 68.8L16 56Q20 48 27.1 42.4L40.9 31.6Q48 26 56.2 22.4L72.7 15.2Q80 12 88 12L100 12Q108 12 114.9 16L124.2 21.5Q132 26 137.1 33.4L144.9 44.6Q150 52 151.9 60.8L154.3 72.2Q156 80 154.7 87.9L152.7 100.1Q152 104 148 104L14 104Q10 104 9.4 100Z" transform="translate(80 104) scale(1.07) translate(-80 -104)"/>
+            <path class="bolha__casca" fill="url(#bolha)" d="M9.4 100L7.1 83.9Q6 76 9.6 68.8L16 56Q20 48 27.1 42.4L40.9 31.6Q48 26 56.2 22.4L72.7 15.2Q80 12 88 12L100 12Q108 12 114.9 16L124.2 21.5Q132 26 137.1 33.4L144.9 44.6Q150 52 151.9 60.8L154.3 72.2Q156 80 154.7 87.9L152.7 100.1Q152 104 148 104L14 104Q10 104 9.4 100Z"/>
+            <g clip-path="url(#corte-bolha-larga)"><path class="bolha__reflexo" d="M44 0h20L28 112H8Z"/></g>
+            <g class="bolha__icone" transform="translate(44 30) scale(1.5)">
+              <rect x="8" y="13" width="32" height="22" rx="5"/><path d="m25.5 16.5-5.5 8h5l-2 7 6-9h-5z"/>
+            </g>
+          </svg>
+        </span>
+        <span class="fita" aria-hidden="true"><span>Novidade • Novidade • Novidade • Novidade • Novidade • Novidade • Novidade •</span></span>
+      </a>
+    </section>
+
+    <section class="encomenda" id="encomenda" aria-labelledby="t-encomenda">
+      <div class="secao-cabeca">
+        <h2 id="t-encomenda">Não achou? A gente encomenda.</h2>
+        <p>Viu um produto em outro lugar e quer pela Rocha Store? Funciona assim:</p>
+      </div>
+      <ol class="passos">
+        <li><span class="passos__n" aria-hidden="true">1</span><p>Mande o nome, o link ou um print do produto.</p></li>
+        <li><span class="passos__n" aria-hidden="true">2</span><p>A gente responde com o preço e o prazo de chegada.</p></li>
+        <li><span class="passos__n" aria-hidden="true">3</span><p>Fechou? A gente encomenda e te avisa quando chegar.</p></li>
+      </ol>
+      <a class="botao botao--linha" data-contato data-mensagem="encomenda" href="#" target="_blank" rel="noopener">
+        <span class="botao__rotulo" data-rotulo-encomenda>Encomendar pelo WhatsApp</span>
+        <svg class="botao__seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+      </a>
+    </section>
+
+    <footer class="rodape">
+      <p class="rodape__marca">Rocha Store<svg class="marca__raio" viewBox="0 0 24 32" aria-hidden="true"><path d="M14.5 1 3 18h7.5L8 31 21 12h-7.8z"/></svg></p>
+      <p class="rodape__pagamento" data-pagamento hidden></p>
+      <p class="rodape__links">
+        <a data-instagram href="https://www.instagram.com/rochastore027/" target="_blank" rel="noopener">Instagram</a>
+        <span aria-hidden="true">·</span>
+        <a data-contato data-mensagem="geral" href="#" target="_blank" rel="noopener" data-rotulo-curto>WhatsApp</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
