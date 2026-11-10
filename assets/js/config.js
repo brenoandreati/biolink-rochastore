@@ -42,7 +42,7 @@ window.ROCHA = {
 
   // Cartão largo do sorteio. Troque ativo para false quando acabar.
   sorteio: {
-    ativo: true,
+    ativo: false,
     selo: "Sorteio no Instagram",
     titulo: "Concorra a um carregador portátil",
     texto: "Participando, você também ganha 10% off na primeira compra. As regras estão na legenda do post.",
